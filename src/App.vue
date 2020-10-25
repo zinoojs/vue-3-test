@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <div id="app">
+     <AppHeader/>
+     <!-- component -->
+    <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans">
+      <!-- <FilmHero/> -->
+      <Calender/>
+    </div>
+     
+   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppHeader from "./components/AppHeader.vue"
+import Calender from "./components/Calender.vue"
+// import FilmHero from "./components/FilmHeros.vue"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    data() {
+      return {
+        
+      }
+    },
+    
+    components : {
+      AppHeader,
+      Calender
+      // FilmHero
+    }
 }
 </script>
+<style scoped>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
